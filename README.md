@@ -15,7 +15,7 @@ url: [http://ec2-18-221-53-246.us-east-2.compute.amazonaws.com/](http://ec2-18-2
 
 #### Create newuser grader and give sudo access
 - sudo adduser grader
-- sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader, save and exit
+- ```sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader```, save and exit
 
 #### enable key based authentication
 1. Generate new SSH key pair from aws lightsail account, name it grader and download it.

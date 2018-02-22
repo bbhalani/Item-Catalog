@@ -111,7 +111,8 @@ You should get connected as grader from your terminal now
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	LogLevel warn
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost> ```
+</VirtualHost> 
+```
 - Enable the virtual host with the following command: ```sudo a2ensite catalog```
 
 #### Create the .wsgi File
@@ -124,7 +125,8 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/FlaskApp/")
 
 from catalog import app as application
-application.secret_key = 'super_secret_key'```
+application.secret_key = 'super_secret_key'
+```
  - save and exit
  - restart apache with ```sudo service apache2 restart```
  
